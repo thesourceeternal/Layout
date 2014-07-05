@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/resets/normalize.min.css">
+        <link rel="stylesheet" href="css/resets/libaries.css">
+        <link rel="stylesheet" href="css/resets/main.css">
+        <link rel="stylesheet" href="css/content.css">
+        <link rel="stylesheet" href="css/mod_skins.css">
+        <link rel="stylesheet" href="css/mod.css">
+        <link rel="stylesheet" href="css/project/sidebar.css">
+
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <!-- More scripts after body -->
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+<!-- Should I be using the class 'mod' in here? -->
+        <div class='page-column sidebar'>
+
+            <div class='menu-header' id='sidebar-top'>
+                <div class='spacer editors-tab-spacer'></div>
+                <menu type='toolbar' class='editors-tabs editor-menu'>
+                    <!-- Really I want to be able to click anywhere in the tab, not just the text,
+                    but this will do for now -->
+                    <li class='tab left-tab inspector-tab active-tab'><a href='#inspector-contents'>Inspector</a></li>
+                    <li class='tab right-tab assets-tab'><a href='#assets-contents'>Assets</a></li>
+                </menu>
+            </div>
+
+            <div class='sidebar-body'>
+                <div id='inspector-contents'>
+
+                    <div class='sidebar-section collapsible drag-height'>
+                        <menu type='list' class='scene-tree'>
+                            <legend class='section-header'>Scene Object Tree</legend>
+                            <ol>
+                                <li class='scene-obj collapsible obj-1' data-id='obj-1-id' data-parent='parent-id?'>
+                                    <div>Some Object 1</div>
+                                    <ol>
+                                        <li class='scene-obj collapsible child obj-1a ' data-id='obj-1a-id' data-parent='parent-id?'>
+                                            <div class='selected-obj'>Child 1</div>
+                                            <ol>
+                                                <li class='scene-obj collapsible child obj-1a1' data-id='obj-1a1-id' data-parent='parent-id?'>
+                                                    <div>Grandchild 1</div>
+                                                </li>
+                                                <li class='scene-obj collapsible child obj-1a2' data-id='obj-1a2-id' data-parent='parent-id?'>
+                                                    <div>Grandchild 2</div>
+                                                </li>
+                                            </ol>
+                                        </li>
+                                        <li class='scene-obj collapsible child obj-1b' data-id='obj-1b-id' data-parent='parent-id?'>Child 2
+                                            <ol>
+                                                <li class='scene-obj collapsible child obj-1b1' data-id='obj-1b1-id' data-parent='parent-id?'>
+                                                    <div>Grandchild 1</div>
+                                                </li>
+                                                <li class='scene-obj collapsible child obj-1b2' data-id='obj-1b2-id' data-parent='parent-id?'>
+                                                    <div>Grandchild 2</div>
+                                                </li>
+                                                <li class='scene-obj collapsible child obj-1b3' data-id='obj-1b3-id' data-parent='parent-id?'>
+                                                    <div>Grandchild 3</div>
+                                                </li>
+                                            </ol>
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li class='scene-obj collapsible obj-2' data-id='obj-2-id' data-parent='parent-id?'>Some Object 2</li>
+                            </ol>
+                        </menu>
+                        <a class='tiny-text jumper' href='#sidebar-top'>Jump to top</a>
+
+                    </div>
+
+                    <form class='sidebar-section component collapsible transforms'>
+                        <legend class='section-header'>Info</legend>
+
+                        <ol>
+                            <li class='child info-field'>
+                                <label for='name'>name:</label>
+                                <input class='name' name='name' type='text'>
+                            </li>
+                            <li class='child info-field'>
+                                <label for='id'>id:</label>
+                                <input class='id' name='id' type='text'>
+                            </li>
+                            <li class='child info-field'>
+                                <label for='foo'>foo:</label>
+                                <input class='foo' name='foo' type='text'>
+                            </li>
+                        </ol>
+                        <a class='tiny-text jumper' href='#sidebar-top'>Jump to top</a>
+
+                    </form>
+
+                    <form class='sidebar-section component collapsible transforms'>
+                        <legend class='section-header'>Transforms</legend>
+
+                        <fieldset class='position'>
+                            <legend>position</legend>
+                            <ol>
+                                <li class='child transform-field'>
+                                    <label for='x-coord'>x:</label>
+                                    <input class='x-coord number' name='x-coord' type='number'>
+                                </li>
+                                <li class='child transform-field'>
+                                    <label for='y-coord'>y:</label>
+                                    <input class='y-coord number' name='y-coord' type='number'>
+                                </li>
+                                <li class='child transform-field'>
+                                    <label for='z-coord'>z:</label>
+                                    <input class='z-coord number' name='z-coord' type='number'>
+                                </li>
+                            </ol>
+                        </fieldset>
+
+                        <fieldset class='rotation'>
+                            <legend>rotation</legend>
+                            <ol>
+                                <li class='child transform-field'>
+                                    <label for='x-rot'>x:</label>
+                                    <input class='x-rot number' name='x-rot' type='number'>
+                                </li>
+                                <li class='child transform-field'>
+                                    <label for='y-rot'>y:</label>
+                                    <input class='y-rot number' name='y-rot' type='number'>
+                                </li>
+                                <li class='child transform-field'>
+                                    <label for='z-rot'>z:</label>
+                                    <input class='z-rot number' name='z-rot' type='number'>
+                                </li>
+                            </ol>
+                        </fieldset>
+
+                        <fieldset class='position'>
+                            <legend>scale</legend>
+                            <ol>
+                                <li class='child transform-field'>
+                                    <label for='x-scale'>x:</label>
+                                    <input class='x-scale number' name='x-scale' type='number'>
+                                </li>
+                                <li class='child transform-field'>
+                                    <label for='y-scale'>y:</label>
+                                    <input class='y-scale number' name='y-scale' type='number'>
+                                </li>
+                                <li class='child transform-field'>
+                                    <label for='z-scale'>z:</label>
+                                    <input class='z-scale number' name='z-scale' type='number'>
+                                </li>
+                            </ol>
+                        </fieldset>
+                        <a class='tiny-text jumper' href='#sidebar-top'>Jump to top</a>
+
+                    </form>
+
+                    <form class='sidebar-section component collapsible comp-id'>
+                        <legend class='section-header'>Component1 Name</legend>
+                        <ol>
+                            <li class='child'>
+                                <label for='varA'>varA number (how stop non-#'s?):</label>
+                                <input class='varA number' name='varA' type='number'>
+                            </li>
+                            <li class='child'>
+                                <label for='varB'>varB text:</label>
+                                <input class='varB number' name='varB' type='text'>
+                            </li>
+                            <li class='child'>
+                                <input name="varC" value="huh?" type="checkbox">
+                                <label for='varC'>varC bool</label>
+                            </li>
+                        </ol>
+                        <a class='tiny-text jumper' href='#sidebar-top'>Jump to top</a>
+
+                    </form>
+
+                    <form class='sidebar-section component collapsible comp-id'>
+                        <legend class='section-header'>Component2 Name</legend>
+                        <ol>
+                            <li class='child'>
+                                <label for='varA'>varA number (how stop non-#'s?):</label>
+                                <input class='varA number' name='varA' type='number'>
+                            </li>
+                            <li class='child'>
+                                <label for='varB'>varB text:</label>
+                                <input class='varB number' name='varB' type='text'>
+                            </li>
+                            <li class='child'>
+                                <input name="varC" value="huh?" type="checkbox">
+                                <label for='varC'>varC bool</label>
+                            </li>
+                        </ol>
+                        <a class='tiny-text jumper' href='#sidebar-top'>Jump to top</a>
+
+                    </form>
+
+                </div>
+
+                <div class='hidden' id='assets-contents'>
+                    
+                </div>
+
+            </div> <!-- end of .sidebar-body -->
+        </div>
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
+
+    <script src="js/sidebar.js"></script>
+
+</html>
+
+
+<!-- I haven't been able to find this exact question, though I'm sure it must be out there, so I'm putting my own question and answer so other people might find the information more easily.
+
+My question was: How do I decrease or reduce the height of a text input field? Edit: Specifically without hiding the text inside the field.
+
+I experimented with number and text input fields. Decreasing the font size of the input tag seemed to work and removing the top and bottom padding also helped reduce the height.
+
+Just in your css:
+
+    input {
+        font-size: .5em;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+Inline if you have to:
+
+    <html>
+    <head>
+        <style type="text/css">
+            input {font-size: .5em; padding-top: 0; padding-bottom:0;}
+        </style>
+    </head>
+    <body>
+        <input type="text" />
+    </body>
+    </html>
+
+I don't think decreasing the height property of the input field is as useful. It will decrease the height of the field, but it will also hide the contents. Decreasing the font size instead will make sure that your user's text remains visible, while taking away the padding will make sure there's no excess space stuffed in there. 
+
+If you want the field to take up even less vertical space, you can remove the top and bottom margins as well, but things can get pretty squishy at that point.
+-->

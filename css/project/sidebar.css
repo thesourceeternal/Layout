@@ -1,0 +1,129 @@
+/* ==========================================================================
+   Extra Resets
+   ========================================================================== */
+* {
+	box-sizing: border-box;
+	color: rgb(200, 200, 200);
+}
+
+html, body {
+	height: 100%;
+}
+
+ol, menu, a, a:visited, a:link {
+	padding: 0;
+	margin: 0;
+	color: inherit;
+}
+
+li {
+	list-style: none;
+}
+
+
+/* ==========================================================================
+   Structure
+   ========================================================================== */
+.page-column {
+	display: inline-block;
+}
+
+.sidebar {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 400px;
+	height: 100%;
+	overflow: scroll;
+}
+
+.tab {
+	width: 50%;
+	float: left;
+	text-align: center;
+}
+
+.sidebar-body {
+	padding: 30px 10px 0 10px;
+}
+
+.sidebar-section {
+	position: relative; /* for abs pos children */
+	padding: 5px 0;
+}
+
+.child {
+	margin-left: 20px;
+}
+
+.transform-field {
+	display: inline;
+}
+
+input {
+	margin: 0 0 4px 4px;
+	padding-left: 4px;
+}
+
+input[type=text] {
+	width: 200px;
+}
+
+input[type=number] {
+	width: 50px;
+}
+
+.jumper {
+	position: absolute;
+	bottom: 0;
+	right: 10px;
+}
+
+
+/* ==========================================================================
+   Skin
+   ========================================================================== */
+.sidebar {
+	background-color: rgb(75, 75, 75);
+	border: 1px solid rgb(40, 40, 40);
+}
+
+.tab {
+	background-color: rgb(55, 55, 55);
+	border-right: 1px solid rgb(40, 40, 40);
+	border-bottom: 1px solid rgb(40, 40, 40);
+	color: rgb(180, 180, 180);
+}
+
+.active-tab {
+	background-color: inherit;
+	border-bottom: none;
+	color: rgb(230, 230, 230);
+}
+
+.tab:last-of-type {
+	border-right: none;
+}
+
+.sidebar-section {
+	border-top: 1px solid rgb(40, 40, 40);
+}
+
+.section-header {
+	font-weight: bold;
+	color: rgb(230, 230, 230);
+}
+
+.selected-obj {
+	background-color: rgb(95, 95, 95);
+}
+
+input {
+	background: none;
+	color: inherit;
+	border: 1px solid gray;
+}
+
+.tiny-text {
+	font-size: .7rem;
+}
