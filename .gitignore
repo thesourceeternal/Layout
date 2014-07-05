@@ -1,0 +1,7 @@
+# Version 0
+
+# Resetting and Normalizing templates for reference
+templates/*
+
+# System files
+.DS_Store
