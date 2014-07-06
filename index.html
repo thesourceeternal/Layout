@@ -45,14 +45,14 @@
                     <div class='sidebar-section collapsible drag-height'>
 
                         <menu type='list' class='scene-tree'>
-                            <legend class='section-header'>Scene Object Tree</legend>
+                            <legend class='section-header'>[v] Scene Object Tree</legend>
 
                             <ol>
                                 <li class='scene-obj collapsible obj-1' data-id='obj-1-id' data-parent='parent-id?'>
-                                    <div>Some Object 1</div>
+                                    <div>[v] Some Object 1</div>
                                     <ol>
                                         <li class='scene-obj collapsible child obj-1a ' data-id='obj-1a-id' data-parent='parent-id?'>
-                                            <div class='selected-obj'>Child 1</div>
+                                            <div class='selected-obj'>[v] Child 1</div>
                                             <ol>
                                                 <li class='scene-obj collapsible child obj-1a1' data-id='obj-1a1-id' data-parent='parent-id?'>
                                                     <div>Grandchild 1</div>
@@ -62,7 +62,7 @@
                                                 </li>
                                             </ol>
                                         </li>
-                                        <li class='scene-obj collapsible child obj-1b' data-id='obj-1b-id' data-parent='parent-id?'>Child 2
+                                        <li class='scene-obj collapsible child obj-1b' data-id='obj-1b-id' data-parent='parent-id?'>[v] Child 2
                                             <ol>
                                                 <li class='scene-obj collapsible child obj-1b1' data-id='obj-1b1-id' data-parent='parent-id?'>
                                                     <div>Grandchild 1</div>
@@ -87,7 +87,7 @@
                     </div> <!-- end .sidebar-section -->
 
                     <form class='sidebar-section component collapsible obj-info'>
-                        <legend class='section-header'>Object Info</legend>
+                        <legend class='section-header'>[v] Object Info</legend>
 
                         <ol>
                             <li class='child info-field'>
@@ -109,7 +109,7 @@
                     </form> <!-- end .obj-info -->
 
                     <form class='sidebar-section component collapsible transforms'>
-                        <legend class='section-header'>Transforms</legend>
+                        <legend class='section-header'>[v] Transforms</legend>
 
                         <fieldset class='position'>
                             <legend>position</legend>
@@ -170,19 +170,23 @@
                     </form> <!-- end .transforms -->
 
                     <form class='sidebar-section component collapsible comp-id'>
-                        <legend class='section-header'>Component1 Name</legend>
+                        <!-- Possibly these could have a checkbox to activate them,
+                        a play button for functions to run the functions, var names
+                        as fields so they can be changed in the inspector -->
+                        <legend class='section-header'>[v] [] Component1 Name</legend>
                         <ol>
                             <li class='child'>
-                                <label for='varA'>varA number (how stop non-#'s?):</label>
-                                <input class='varA number' name='varA' type='number'>
+                                <label for='aNum'>aNum (how stop non-#'s?):</label>
+                                <input class='aNum number' name='aNum' type='number'>
                             </li>
                             <li class='child'>
-                                <label for='varB'>varB text:</label>
-                                <input class='varB number' name='varB' type='text'>
+                                <label for='someText'>someText:</label>
+                                <input class='someText number' name='someText' type='text'>
                             </li>
                             <li class='child'>
-                                <input name="varC" value="huh?" type="checkbox">
-                                <label for='varC'>varC bool</label>
+                                <!-- for a bool -->
+                                <input name="aBool" value="huh?" type="checkbox">
+                                <label for='aBool'>aBool</label>
                             </li>
                         </ol>
 
@@ -191,20 +195,22 @@
                     </form> <!-- end .comp-id -->
 
                     <form class='sidebar-section component collapsible comp-id'>
-                        <legend class='section-header'>Component2 Name</legend>
+                        <legend class='section-header'>[v] [] Component2 Name</legend>
 
                         <ol>
                             <li class='child'>
-                                <label for='varA'>varA number (how stop non-#'s?):</label>
-                                <input class='varA number' name='varA' type='number'>
+                                <!-- Perhaps if text exceeds width of textbox, focus
+                                on the input will pop out a wider input field -->
+                                <label for='aNum'>var <input class='var-name' name='aNum' type='text' value="aNum (how stop non-#'s?)">:</label>
+                                <input class='aNum number' name='aNum' type='number'>
                             </li>
                             <li class='child'>
-                                <label for='varB'>varB text:</label>
-                                <input class='varB number' name='varB' type='text'>
+                                <label for='someText'>var <input class='var-name' name='someText-name' type='text' value='someText'>:</label>
+                                <input class='someText number' name='someText' type='text'>
                             </li>
                             <li class='child'>
-                                <input name="varC" value="huh?" type="checkbox">
-                                <label for='varC'>varC bool</label>
+                                <input name="aBool" value="huh?" type="checkbox">
+                                <label for='aBool'>var <input class='var-name' name='aBool' type='text' value="aBool"></label>
                             </li>
                         </ol>
 
