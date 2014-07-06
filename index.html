@@ -45,7 +45,7 @@
                     <div class='sidebar-section collapsible drag-height'>
 
                         <menu type='list' class='scene-tree'>
-                            <legend class='section-header'>[v] Scene Object Tree</legend>
+                            <h3>[v] Scene Object Tree</h3>
 
                             <ol>
                                 <li class='scene-obj collapsible obj-1' data-id='obj-1-id' data-parent='parent-id?'>
@@ -88,7 +88,7 @@
                     </div> <!-- end .sidebar-section -->
 
                     <form class='sidebar-section component collapsible obj-info'>
-                        <legend class='section-header'>[v] Object Info</legend>
+                        <h3>[v] Object Info</h3>
 
                         <ol>
                             <li class='child info-field'>
@@ -110,7 +110,7 @@
                     </form> <!-- end .obj-info -->
 
                     <form class='sidebar-section component collapsible transforms'>
-                        <legend class='section-header'>[v] Transforms</legend>
+                        <h3>[v] Transforms</h3>
 
                         <fieldset class='position'>
                             <legend><button>position</button></legend>
@@ -174,7 +174,7 @@
                         <!-- Possibly these could have a checkbox to activate them,
                         a play button for functions to run the functions, var names
                         as fields so they can be changed in the inspector -->
-                        <legend class='section-header'>[v] [] Script1</legend>
+                        <h3>[v] [] Script1</h3>
                         <ol>
                             <li class='child'>
                                 <label for='aNum'>aNum (how stop non-#'s?):</label>
@@ -196,7 +196,7 @@
                     </form> <!-- end .comp-id -->
 
                     <form class='sidebar-section component collapsible comp-id'>
-                        <legend class='section-header'>[v] [] Script2</legend>
+                        <h3>[v] [] Script2</h3>
 
                         <ol>
                             <li class='child'>
@@ -212,6 +212,10 @@
                             <li class='child'>
                                 <input name="aBool" type="checkbox">
                                 <label for='aBool'>var <input class='var-name' name='aBool' type='text' value="aBool"></label>
+                            </li>
+                            <li class='child'>
+                                <label for='aColor'>var <input class='var-name' name='aColor' type='text' value="aColor"></label>
+                                <input name="aColor" type="color">
                             </li>
                         </ol>
 

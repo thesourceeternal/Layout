@@ -17,8 +17,21 @@ ol, menu, nav, a, a:visited, a:link, input {
 	color: inherit;
 }
 
+h1, h2, h3, h4 {
+	font-size: 1rem;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
 li {
 	list-style: none;
+}
+
+input {
+	border-spacing: 0px;
+	margin: 0px;
+	padding: 0px;
 }
 
 
@@ -61,12 +74,9 @@ li {
 	display: inline;
 }
 
-input {
+input[type=text] {
 	margin: 0 0 4px 4px;
 	padding-left: 4px;
-}
-
-input[type=text] {
 	width: 200px;
 }
 
@@ -75,7 +85,15 @@ input[type=text].var-name {
 }
 
 input[type=number] {
+	margin: 0 0 4px 4px;
+	padding-left: 4px;
 	width: 50px;
+}
+
+input[type=color] {
+	padding: 0;
+	width: 20px;
+	height: 24px;
 }
 
 .jumper {
@@ -88,6 +106,20 @@ input[type=number] {
 /* ==========================================================================
    Skin
    ========================================================================== */
+h1 {
+	font-size: 1.5rem;
+	color: rgb(230, 230, 230);
+}
+
+h2 {
+	font-size: 1.3rem;
+	color: rgb(230, 230, 230);
+}
+
+h3 {
+	color: rgb(230, 230, 230);
+}
+
 .sidebar {
 	background-color: rgb(75, 75, 75);
 	border: 1px solid rgb(40, 40, 40);
@@ -112,11 +144,6 @@ input[type=number] {
 
 .sidebar-section {
 	border-top: 1px solid rgb(40, 40, 40);
-}
-
-.section-header {
-	font-weight: bold;
-	color: rgb(230, 230, 230);
 }
 
 .selected-obj {
