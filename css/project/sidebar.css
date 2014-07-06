@@ -91,9 +91,14 @@ input[type=number] {
 }
 
 input[type=color] {
+	position: relative;
+	bottom: -4px;
+	margin-top: -10px;
+	margin-bottom: -20px;
 	padding: 0;
-	width: 20px;
-	height: 24px;
+	width: 27px;
+	height: 28px;
+	border: none;
 }
 
 .jumper {
