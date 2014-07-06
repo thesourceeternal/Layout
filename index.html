@@ -27,9 +27,9 @@
         <![endif]-->
 
 <!-- Should I be using the class 'mod' in here? -->
-        <div class='page-column sidebar'>
+        <div class='sidebar'>
 
-            <div class='nav-header' id='sidebar-top'>
+            <div class='nav-header' id='sidebar-header'>
                 <div class='spacer editors-tab-spacer'></div>
                 <nav class='editors-tabs editor-menu'>
                     <!-- Really I want to be able to click anywhere in the tab, not just the text,
@@ -43,8 +43,10 @@
                 <div id='inspector-contents'>
 
                     <div class='sidebar-section collapsible drag-height'>
+
                         <menu type='list' class='scene-tree'>
                             <legend class='section-header'>Scene Object Tree</legend>
+
                             <ol>
                                 <li class='scene-obj collapsible obj-1' data-id='obj-1-id' data-parent='parent-id?'>
                                     <div>Some Object 1</div>
@@ -77,12 +79,14 @@
                                 </li>
                                 <li class='scene-obj collapsible obj-2' data-id='obj-2-id' data-parent='parent-id?'>Some Object 2</li>
                             </ol>
-                        </menu>
-                        <a class='tiny-text jumper' href='#sidebar-top'>Jump to top</a>
 
-                    </div>
+                        </menu> <!-- end .scene-tree -->
 
-                    <form class='sidebar-section component collapsible transforms'>
+                        <a class='tiny-text jumper' href='#sidebar-header'>Jump to top</a>
+
+                    </div> <!-- end .sidebar-section -->
+
+                    <form class='sidebar-section component collapsible obj-info'>
                         <legend class='section-header'>Object Info</legend>
 
                         <ol>
@@ -99,9 +103,10 @@
                                 <input class='foo' name='foo' type='text'>
                             </li>
                         </ol>
-                        <a class='tiny-text jumper' href='#sidebar-top'>Jump to top</a>
 
-                    </form>
+                        <a class='tiny-text jumper' href='#sidebar-header'>Jump to top</a>
+
+                    </form> <!-- end .obj-info -->
 
                     <form class='sidebar-section component collapsible transforms'>
                         <legend class='section-header'>Transforms</legend>
@@ -159,9 +164,10 @@
                                 </li>
                             </ol>
                         </fieldset>
-                        <a class='tiny-text jumper' href='#sidebar-top'>Jump to top</a>
 
-                    </form>
+                        <a class='tiny-text jumper' href='#sidebar-header'>Jump to top</a>
+
+                    </form> <!-- end .transforms -->
 
                     <form class='sidebar-section component collapsible comp-id'>
                         <legend class='section-header'>Component1 Name</legend>
@@ -179,12 +185,14 @@
                                 <label for='varC'>varC bool</label>
                             </li>
                         </ol>
-                        <a class='tiny-text jumper' href='#sidebar-top'>Jump to top</a>
 
-                    </form>
+                        <a class='tiny-text jumper' href='#sidebar-header'>Jump to top</a>
+
+                    </form> <!-- end .comp-id -->
 
                     <form class='sidebar-section component collapsible comp-id'>
                         <legend class='section-header'>Component2 Name</legend>
+
                         <ol>
                             <li class='child'>
                                 <label for='varA'>varA number (how stop non-#'s?):</label>
@@ -199,18 +207,20 @@
                                 <label for='varC'>varC bool</label>
                             </li>
                         </ol>
-                        <a class='tiny-text jumper' href='#sidebar-top'>Jump to top</a>
 
-                    </form>
+                        <a class='tiny-text jumper' href='#sidebar-header'>Jump to top</a>
 
-                </div>
+                    </form> <!-- end .comp-id -->
 
-                <div class='hidden' id='assets-contents'>
+                </div> <!-- end #inspector-contents -->
+
+                <div id='assets-contents' class='hidden'>
                     
-                </div>
+                </div> <!-- end #assets-contents -->
 
-            </div> <!-- end of .sidebar-body -->
-        </div>
+            </div> <!-- end .sidebar-body -->
+
+        </div> <!-- end .sidebar -->
 
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
