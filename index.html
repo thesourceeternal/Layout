@@ -81,6 +81,7 @@
                             </ol>
 
                         </menu> <!-- end .scene-tree -->
+                        <!-- Add a search field for searching the objects (lazy search) -->
 
                         <a class='tiny-text jumper' href='#sidebar-header'>Jump to top</a>
 
@@ -173,7 +174,7 @@
                         <!-- Possibly these could have a checkbox to activate them,
                         a play button for functions to run the functions, var names
                         as fields so they can be changed in the inspector -->
-                        <legend class='section-header'>[v] [] Component1 Name</legend>
+                        <legend class='section-header'>[v] [] Script1</legend>
                         <ol>
                             <li class='child'>
                                 <label for='aNum'>aNum (how stop non-#'s?):</label>
@@ -185,7 +186,7 @@
                             </li>
                             <li class='child'>
                                 <!-- for a bool -->
-                                <input name="aBool" value="huh?" type="checkbox">
+                                <input name="aBool" type="checkbox">
                                 <label for='aBool'>aBool</label>
                             </li>
                         </ol>
@@ -195,7 +196,7 @@
                     </form> <!-- end .comp-id -->
 
                     <form class='sidebar-section component collapsible comp-id'>
-                        <legend class='section-header'>[v] [] Component2 Name</legend>
+                        <legend class='section-header'>[v] [] Script2</legend>
 
                         <ol>
                             <li class='child'>
@@ -209,7 +210,7 @@
                                 <input class='someText number' name='someText' type='text'>
                             </li>
                             <li class='child'>
-                                <input name="aBool" value="huh?" type="checkbox">
+                                <input name="aBool" type="checkbox">
                                 <label for='aBool'>var <input class='var-name' name='aBool' type='text' value="aBool"></label>
                             </li>
                         </ol>
