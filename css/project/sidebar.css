@@ -194,7 +194,7 @@ input {
 }
 
 /* --- Section colors --- */
-.scene-tree-container h4 {
+.scene-tree-container h4 { /* white on black */
 	background-color: rgba(0, 0, 0, .4);
 }
 
@@ -204,23 +204,23 @@ input {
 }
 
 .obj-info h4 {
-	color: rgba(255, 69, 69, 0.82);
+	color: rgba(218, 84, 84, 0.82); /* red */
 }
 
 .comp-trans h4 {
-	color: rgba(106, 168, 79, 1);
+	color: rgba(106, 168, 79, 1); /* green */
 }
 
 .comp-physics h4 {
-	color: rgba(230, 145, 56, 1);
+	color: rgba(230, 145, 56, 1); /* orange */
 }
 
 .comp-script h4 {
-	color: rgba(159, 197, 232, 1);
+	color: rgba(159, 197, 232, 1); /* blue */
 }
 
 .comp-mat h4 {
-	color: rgba(255, 229, 153, 1);
+	color: rgba(255, 229, 153, 1); /* yellow */
 }
 
 /* --- Extra flourishes --- */
