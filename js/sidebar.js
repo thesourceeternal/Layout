@@ -10,7 +10,6 @@ $(document).ready(function() {
     // Scene tree starts as expanded. What is the expected behavior
     // when an object is added? Is the tree expanded to its location?
     $(".sidebar .collapser").addClass("expanded")
-    $(".sidebar .collapser").addClass("expanded")
 
 	// --- Expand and Collapse --- \\
 	$(".sidebar")
