@@ -1,3 +1,6 @@
+// http://stackoverflow.com/questions/5802467/prevent-scrolling-of-parent-element
+// Troy Alford with alteration by Mitar
+
 $(document).on('DOMMouseScroll mousewheel', '.scrollable', function(ev) {
     var $this = $(this),
         scrollTop = this.scrollTop,
