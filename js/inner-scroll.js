@@ -17,7 +17,7 @@ $(document).on('DOMMouseScroll mousewheel', '.scrollable', function(ev) {
 
     if (!up && -delta > scrollHeight - height - scrollTop) {
         // Scrolling down, but this will take us past the bottom.
-        $this.scrollTop(scrollHeight);
+        $this.scrollTop(scrollHeight - height);
         return prevent();
     } else if (up && delta > scrollTop) {
         // Scrolling up, but this will take us past the top.
