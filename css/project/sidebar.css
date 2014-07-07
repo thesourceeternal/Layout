@@ -75,10 +75,10 @@ li, legend {margin-bottom: .1rem;}
 
 .child {margin-left: 20px;}
 
-/* need to find a way to make this universal, maybe another div :P */
+/* more universal, not extra div, just on forms */
 .inner-section {margin-bottom: 10px;}
 
-.transform-field {display: inline;}
+.transform-field {display: inline-block;}
 
 input[type=text] {
 	margin: 0 0 4px 4px;
