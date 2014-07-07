@@ -7,6 +7,11 @@
 
 $(document).ready(function() {
 
+	// Buttons should never reload the page (possibly)
+	$(document).on("click", "button", function (evt) {
+		evt.preventDefault()
+	})
+
     // Scene tree starts as expanded. What is the expected behavior
     // when an object is added? Is the tree expanded to its location?
     $(".sidebar .collapser").addClass("expanded")
