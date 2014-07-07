@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="css/resets/normalize.min.css">
         <!-- <link rel="stylesheet" href="css/resets/libraries.css"> -->
         <link rel="stylesheet" href="css/resets/main.css">
-        <link rel="stylesheet" href="css/content.css">
+        <!-- <link rel="stylesheet" href="css/content.css"> -->
         <link rel="stylesheet" href="css/mod_skins.css">
         <link rel="stylesheet" href="css/mod.css">
         <link rel="stylesheet" href="css/project/sidebar.css">
@@ -31,7 +31,7 @@
 
             <div class='nav-header' id='sidebar-header'>
                 <div class='spacer editors-tab-spacer'></div>
-                <div class='placeholder'><h3>Inspector</h3></div>
+                <div class='faux-elem'><h3>Inspector</h3></div>
                 <nav class='editors-tabs editor-menu'>
                     <!-- Really I want to be able to click anywhere in the tab, not just the text,
                     but this will do for now -->
@@ -43,42 +43,73 @@
             <div class='sidebar-body'>
                 <div id='inspector-contents'>
 
-                    <div class='sidebar-section collapsible drag-height'>
+                    <div class='sidebar-section drag-height'>
 
                         <menu type='list' class='scene-tree-container'>
-                            <h4>[v] Scene Object Tree</h4>
+                            <h4>
+                                <button class='collapser'>[v]</button> Scene Object Tree
+                            </h4>
 
-                            <ol class='scrollable scene-tree'>
-                                <li class='scene-obj collapsible obj-1' data-id='obj-1-id' data-parent='parent-id?'>
-                                    <div>[v] Some Object 1</div>
-                                    <ol>
-                                        <li class='scene-obj collapsible child obj-1a ' data-id='obj-1a-id' data-parent='parent-id?'>
-                                            <div class='selected-obj'>[v] Child 1</div>
-                                            <ol>
-                                                <li class='scene-obj collapsible child obj-1a1' data-id='obj-1a1-id' data-parent='parent-id?'>
-                                                    <div>Grandchild 1</div>
+                            <ol class='scrollable collapsible scene-tree'>
+                                <li class='scene-obj obj-1' data-id='obj-1-id' data-parent='parent-id?'>
+                                    <div class='selectable'>
+                                        <button class='collapser'>[v]</button> Some Object 1
+                                    </div>
+
+                                    <ol class='collapsible'>
+                                        <li class='scene-obj child obj-1a' data-id='obj-1a-id' data-parent='parent-id?'>
+                                            <div class='selectable selected-obj'>
+                                                <button class='collapser'>[v]</button> Child 1
+                                            </div>
+
+                                            <ol class='collapsible'>
+                                                <li class='scene-obj child obj-1a1' data-id='obj-1a1-id' data-parent='parent-id?'>
+                                                    <div class='selectable'>
+                                                        <button class='collapser invisible'>[v]</button>Grandchild 1
+                                                    </div>
                                                 </li>
-                                                <li class='scene-obj collapsible child obj-1a2' data-id='obj-1a2-id' data-parent='parent-id?'>
-                                                    <div>Grandchild 2</div>
-                                                </li>
-                                            </ol>
-                                        </li>
-                                        <li class='scene-obj collapsible child obj-1b' data-id='obj-1b-id' data-parent='parent-id?'>[v] Child 2
-                                            <ol>
-                                                <li class='scene-obj collapsible child obj-1b1' data-id='obj-1b1-id' data-parent='parent-id?'>
-                                                    <div>Grandchild 1</div>
-                                                </li>
-                                                <li class='scene-obj collapsible child obj-1b2' data-id='obj-1b2-id' data-parent='parent-id?'>
-                                                    <div>Grandchild 2</div>
-                                                </li>
-                                                <li class='scene-obj collapsible child obj-1b3' data-id='obj-1b3-id' data-parent='parent-id?'>
-                                                    <div>Grandchild 3</div>
+                                                <li class='scene-obj child obj-1a2' data-id='obj-1a2-id' data-parent='parent-id?'>
+                                                    <div class='selectable'>
+                                                        <button class='collapser invisible'>[v]</button>Grandchild 2
+                                                    </div>
                                                 </li>
                                             </ol>
+
                                         </li>
+
+                                        <li class='scene-obj child obj-1b' data-id='obj-1b-id' data-parent='parent-id?'>
+                                            <div class='selectable'>
+                                                <button class='collapser'>[v]</button> Child 2
+                                            </div>
+
+                                            <ol class='collapsible'>
+                                                <li class='scene-obj child obj-1b1' data-id='obj-1b1-id' data-parent='parent-id?'>
+                                                    <div class='selectable'>
+                                                        <button class='collapser invisible'>[v]</button>Grandchild 1
+                                                    </div>
+                                                </li>
+                                                <li class='scene-obj child obj-1b2' data-id='obj-1b2-id' data-parent='parent-id?'>
+                                                    <div class='selectable'>
+                                                        <button class='collapser invisible'>[v]</button>Grandchild 2
+                                                    </div>
+                                                </li>
+                                                <li class='scene-obj child obj-1b3' data-id='obj-1b3-id' data-parent='parent-id?'>
+                                                    <div class='selectable'>
+                                                        <button class='collapser invisible'>[v]</button>Grandchild 3
+                                                    </div>
+                                                </li>
+                                            </ol>
+
+                                        </li>
+
                                     </ol>
+
                                 </li>
-                                <li class='scene-obj collapsible obj-2' data-id='obj-2-id' data-parent='parent-id?'>Some Object 2</li>
+                                <li class='scene-obj collapsible obj-2' data-id='obj-2-id' data-parent='parent-id?'>
+                                    <div class='selectable'>
+                                        <button class='collapser invisible'>[v]</button>Some Object 2
+                                    </div>
+                                </li>
                             </ol>
 
                         </menu> <!-- end .scene-tree -->
@@ -89,7 +120,9 @@
                     </div> <!-- end .sidebar-section -->
 
                     <form class='sidebar-section component collapsible obj-info'>
-                        <h4>[v] Object Info</h4>
+                        <h4>
+                            <button class='collapser'>[v]</button> Object Info
+                        </h4>
 
                         <ol>
                             <li class='child info-field'>
