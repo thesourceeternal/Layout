@@ -45,10 +45,10 @@
 
                     <div class='sidebar-section collapsible drag-height'>
 
-                        <menu type='list' class='scene-tree'>
+                        <menu type='list' class='scene-tree-container'>
                             <h4>[v] Scene Object Tree</h4>
 
-                            <ol>
+                            <ol class='scrollable scene-tree'>
                                 <li class='scene-obj collapsible obj-1' data-id='obj-1-id' data-parent='parent-id?'>
                                     <div>[v] Some Object 1</div>
                                     <ol>
@@ -110,7 +110,7 @@
 
                     </form> <!-- end .obj-info -->
 
-                    <form class='sidebar-section component collapsible transforms'>
+                    <form class='sidebar-section component collapsible comp-trans'>
                         <h4>[v] Transforms</h4>
 
                         <fieldset class='position'>
@@ -171,15 +171,15 @@
 
                     </form> <!-- end .transforms -->
 
-                    <form class='sidebar-section component collapsible comp-id'>
+                    <form class='sidebar-section component collapsible comp-script comp-id'>
                         <!-- Possibly these could have a checkbox to activate them,
                         a play button for functions to run the functions, var names
                         as fields so they can be changed in the inspector -->
-                        <h4 class='comp-script'>[v] [] Script1</h4>
+                        <h4>[v] [] Script1</h4>
                         <ol>
                             <li class='child'>
-                                <label for='aNum'>aNum (how stop non-#'s?):</label>
-                                <input class='aNum number' name='aNum' type='number'>
+                                <label for='aNum'>aNum:</label>
+                                <input class='aNum number' name='aNum' type='number' placerholder='How to validate?'>
                             </li>
                             <li class='child'>
                                 <label for='someText'>someText:</label>
@@ -196,14 +196,14 @@
 
                     </form> <!-- end .comp-id -->
 
-                    <form class='sidebar-section component collapsible comp-id'>
-                        <h4 class='comp-script'>[v] [] Script2</h4>
+                    <form class='sidebar-section component collapsible comp-script comp-id'>
+                        <h4>[v] [] Script2</h4>
 
                         <ol>
                             <li class='child'>
                                 <!-- Perhaps if text exceeds width of textbox, focus
                                 on the input will pop out a wider input field -->
-                                <label for='aNum'>var <input class='var-name' name='aNum' type='text' value="aNum (how stop non-#'s?)">:</label>
+                                <label for='aNum'>var <input class='var-name' name='aNum' type='text' value="aNum">:</label>
                                 <input class='aNum number' name='aNum' type='number'>
                             </li>
                             <li class='child'>
@@ -221,6 +221,31 @@
                             <li class='child'>
                                 <input name="aBoolToo" type="checkbox">
                                 <label for='aBoolToo'>var <input class='var-name' name='aBoolToo' type='text' value="aBoolToo"></label>
+                            </li>
+                        </ol>
+
+                        <a class='tiny-text jumper' href='#sidebar-header'>Jump to top</a>
+
+                    </form> <!-- end .comp-id -->
+
+                    <form class='sidebar-section component collapsible comp-mat comp-id'>
+                        <h4>[v] [] Material</h4>
+                        <ol>
+                            <li class='child'>
+                                <label for='aColor'>var <input class='var-name' name='aColor' type='text' value="aColor"></label>
+                                <input name="aColor" type="color">
+                            </li>
+                        </ol>
+
+                        <a class='tiny-text jumper' href='#sidebar-header'>Jump to top</a>
+
+                    </form> <!-- end .comp-id -->
+
+                    <form class='sidebar-section component collapsible comp-physics comp-id'>
+                        <h4>[v] [] Collider</h4>
+                        <ol>
+                            <li class='child'>
+                                Test
                             </li>
                         </ol>
 
@@ -254,5 +279,6 @@
     </body>
 
     <script src="js/sidebar.js"></script>
+    <script src="js/inner-scroll.js"></script>
 
 </html>

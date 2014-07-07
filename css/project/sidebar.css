@@ -43,6 +43,7 @@ input {
 /* ==========================================================================
    Structure
    ========================================================================== */
+
 h4 {
 	margin-bottom: .2rem;
 }
@@ -85,8 +86,16 @@ h4 {
 	padding: 5px 0;
 }
 
+ol {
+	margin-bottom: 10px;
+}
+
 .child {
 	margin-left: 20px;
+}
+
+.scene-tree-container {
+	margin-bottom: 10px;
 }
 
 .transform-field {
@@ -130,6 +139,8 @@ input[type=color] {
 /* ==========================================================================
    Skin
    ========================================================================== */
+
+/* --- Basic elements --- */
 h1 {
 	font-size: 1.5rem;
 }
@@ -145,10 +156,13 @@ h3 {
 h4 {
 }
 
-.comp-script {
-	background-color: rgba(159, 197, 232, .4);
+input {
+	background: none;
+	color: inherit;
+	border: 1px solid gray;
 }
 
+/* --- Starting from the top --- */
 .sidebar {
 	background-color: rgb(75, 75, 75);
 	border: 1px solid rgb(40, 40, 40);
@@ -179,12 +193,53 @@ h4 {
 	background-color: rgb(95, 95, 95);
 }
 
-input {
-	background: none;
-	color: inherit;
-	border: 1px solid gray;
+/* --- Section colors --- */
+.scene-tree-container h4 {
+	background-color: rgba(0, 0, 0, .4);
 }
 
-.tiny-text {
+.scene-tree-container {
+	background-color: rgba(0, 0, 0, .2);
+	border: 1px solid rgba(40, 40, 40, .6);
+}
+
+.obj-info h4 {
+	color: rgba(255, 69, 69, 0.82);
+}
+
+.comp-trans h4 {
+	color: rgba(106, 168, 79, 1);
+}
+
+.comp-physics h4 {
+	color: rgba(230, 145, 56, 1);
+}
+
+.comp-script h4 {
+	color: rgba(159, 197, 232, 1);
+}
+
+.comp-mat h4 {
+	color: rgba(255, 229, 153, 1);
+}
+
+/* --- Extra flourishes --- */
+.tiny-text {  /* Needs better name */
 	font-size: .7rem;
+}
+
+
+/* ==========================================================================
+   Functionality
+   ========================================================================== */
+
+.scrollable {
+	overflow: scroll;
+}
+
+.scene-tree {
+	height: 150px;
+}
+
+.scene-tree-container {
 }
