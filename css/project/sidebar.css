@@ -11,32 +11,29 @@ html, body {
 	color: rgb(200, 200, 200);
 }
 
+body{font-family:"Myriad Pro","Segoe UI",Helvetica, Arial, sans-serif;}
+
 ol, menu, nav, a, a:visited, a:link, input {
 	padding: 0;
 	margin: 0;
 	color: inherit;
 }
 
-h1, h2, h3, h4 {
+a {text-decoration: none;}
+
+h1, h2, h3, h4, h5, h6 {
 	font-size: 1rem;
 	font-weight: bold;
 	padding: 0;
 	margin: 0;
-	color: rgb(230, 230, 230);
 }
 
-li, legend {	
-	margin: 0 0 .1rem 0;
-}
-
-li {
-	list-style: none;
-}
+li {list-style: none;}
 
 input {
-	border-spacing: 0px;
-	margin: 0px;
-	padding: 0px;
+	border-spacing: 0;
+	margin: 0;
+	padding: 0;
 }
 
 
@@ -44,17 +41,9 @@ input {
    Structure
    ========================================================================== */
 
-h4 {
-	margin-bottom: .2rem;
-}
+menu {padding-top: .2rem;}
 
-.faux-elem {
-	visibility: hidden;
-}
-
-.page-column {
-	display: inline-block;
-}
+li, legend {margin-bottom: .1rem;}
 
 .sidebar {
 	position: absolute;
@@ -77,30 +66,19 @@ h4 {
 	text-align: center;
 }
 
-.sidebar-body {
-	padding: 10px 10px 0 10px;
-}
+.sidebar-body {padding: 10px 10px 0 10px;}
 
 .sidebar-section {
 	position: relative; /* for abs pos children */
 	padding: 5px 0;
 }
 
-ol {
-	margin-bottom: 10px;
-}
+.child {margin-left: 20px;}
 
-.child {
-	margin-left: 20px;
-}
+/* need to find a way to make this universal, maybe another div :P */
+.inner-section {margin-bottom: 10px;}
 
-.scene-tree-container {
-	margin-bottom: 10px;
-}
-
-.transform-field {
-	display: inline;
-}
+.transform-field {display: inline;}
 
 input[type=text] {
 	margin: 0 0 4px 4px;
@@ -137,30 +115,35 @@ input[type=color] {
 
 
 /* ==========================================================================
+   Functionality
+   ========================================================================== */
+
+.scrollable {overflow: scroll;}
+
+.scene-tree {height: 150px;}
+
+.invisible {visibility: hidden;}
+
+.faux-elem {visibility: hidden;}
+
+
+/* ==========================================================================
    Skin
    ========================================================================== */
 
 /* --- Basic elements --- */
-body{font-family:"Myriad Pro","Segoe UI",Helvetica, Arial, sans-serif;}
 
-a {
-	text-decoration: none;
+h1, h2, h3, h4, h5, h6 {
+	color: rgb(230, 230, 230);
 }
 
-h1 {
-	font-size: 1.5rem;
-}
+h1 {font-size: 1.5rem;}
 
-h2 {
-	font-size: 1.3rem;
-}
+h2 {font-size: 1.3rem;}
 
-h3 {
-	font-size: 1.1rem;
-}
+h3 {font-size: 1.1rem;}
 
-h4 {
-}
+h4 {}
 
 input {
 	background: none;
@@ -187,24 +170,18 @@ input {
 	color: rgb(230, 230, 230);
 }
 
-.tab:last-of-type {
-	border-right: none;
-}
+.tab:last-of-type {border-right: none;}
 
-.sidebar-section {
-	border-top: 1px solid rgb(40, 40, 40);
-}
+.sidebar-section {border-top: 1px solid rgb(40, 40, 40);}
 
-.selected-obj {
-	background-color: rgb(95, 95, 95);
-}
+.selected-obj {background-color: rgb(95, 95, 95);}
 
 /* --- Section colors --- */
 .scene-tree-container h4 { /* white on black */
 	background-color: rgba(0, 0, 0, .4);
 }
 
-.scene-tree-container {
+.scene-tree-container menu {
 	background-color: rgba(0, 0, 0, .2);
 	border: 1px solid rgba(40, 40, 40, .6);
 }
@@ -229,24 +206,23 @@ input {
 	color: rgba(255, 229, 153, 1); /* yellow */
 }
 
+/* --- Buttons --- */
+.collapser {
+	background: none;
+	border: none;
+}
+
+.expanded {
+	behavior: url(-ms-transform.htc);
+    /* Firefox */
+    -moz-transform: rotate(90deg);
+    /* Safari and Chrome */
+    -webkit-transform: rotate(90deg);
+    /* Opera */
+    -o-transform: rotate(90deg);
+}
+
 /* --- Extra flourishes --- */
 .tiny-text {  /* Needs better name */
 	font-size: .7rem;
-}
-
-
-/* ==========================================================================
-   Functionality
-   ========================================================================== */
-
-.scrollable {
-	overflow: scroll;
-}
-
-.scene-tree {
-	height: 150px;
-}
-
-.invisible {
-	visibility: hidden;
 }

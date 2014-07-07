@@ -7,6 +7,11 @@
 
 $(document).ready(function() {
 
+    // Scene tree starts as expanded. What is the expected behavior
+    // when an object is added? Is the tree expanded to its location?
+    $(".sidebar .collapser").addClass("expanded")
+    $(".sidebar .collapser").addClass("expanded")
+
 	// --- Expand and Collapse --- \\
 	$(".sidebar")
 		// Hide and show elements appearing nested
@@ -14,7 +19,7 @@ $(document).ready(function() {
 			$clickedElem = $(this)
 			$clickedElem.parent().next().slideToggle();
 			// Toggle the arrow image
-			// $clickedElem.toggleClass("expanded");
+			$clickedElem.toggleClass("expanded")
 			// For accessibility, change the alt text of the arrow
 			if ($clickedElem.attr("alt") !== "Click to collapse") {
 				$clickedElem.attr("alt", "Click to collapse")
