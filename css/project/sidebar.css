@@ -75,8 +75,9 @@ li, legend {margin-bottom: .1rem;}
 
 .child {margin-left: 20px;}
 
-/* more universal, not extra div, just on forms */
 .inner-section {margin-bottom: 10px;}
+
+.scene-tree {height: 150px;}
 
 .transform-field {display: inline-block;}
 
@@ -107,7 +108,7 @@ input[type=color] {
 	border: none;
 }
 
-.jumper {
+.jump-to-top {
 	position: absolute;
 	bottom: 0;
 	right: 10px;
@@ -120,11 +121,13 @@ input[type=color] {
 
 .scrollable {overflow: scroll;}
 
-.scene-tree {height: 150px;}
-
 .invisible {visibility: hidden;}
 
 .faux-elem {visibility: hidden;}
+
+.collapsible {-webkit-transition: height .3s linear}
+
+.collapsed {height: 0;}
 
 
 /* ==========================================================================
