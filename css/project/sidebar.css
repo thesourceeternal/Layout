@@ -66,11 +66,10 @@ li, legend {margin-bottom: .1rem;}
 	text-align: center;
 }
 
-.sidebar-body {padding: 10px 10px 0 10px;}
-
 .sidebar-section {
 	position: relative; /* for abs pos children */
 	padding: 5px 0;
+	margin: 0 10px;
 }
 
 .child {margin-left: 20px;}
@@ -123,7 +122,10 @@ input[type=color] {
 
 .invisible {visibility: hidden;}
 
-.faux-elem {visibility: hidden;}
+.faux-elem {
+	visibility: hidden;
+	margin-bottom: 10px; /* space between tabs and section line */
+}
 
 .collapsible {-webkit-transition: height .3s linear}
 

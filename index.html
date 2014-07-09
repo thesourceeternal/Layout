@@ -29,295 +29,292 @@
                 but this will do for now.
                 I also don't want the page to jump down anywhere, perhaps this is the wrong
                 way to do this. -->
-                <li class='tab left-tab inspector-tab active-tab'><h3><a href='#inspector-contents'>Inspector</a></h3></li>
-                <li class='tab right-tab assets-tab'><h3><a href='#assets-contents'>Assets</a></h3></li>
+                <h3 class='tab left-tab inspector-tab active-tab'><a href='#inspector-contents'>Inspector</a></h3>
+                <h3 class='tab right-tab assets-tab'><a href='#assets-contents'>Assets</a></h3>
             </nav>
 
-            <div class='sidebar-body'>
-                <div id='inspector-contents'>
+            <div id='inspector-contents'>
 
-                    <div class='sidebar-section drag-height scene-tree-container'>
-                        <h4>
-                            <button class='collapser'><img src='images/arrow-small.png' alt='Click to collapse'></button> Scene Object Tree
-                        </h4>
+                <div class='sidebar-section drag-height scene-tree-container'>
+                    <h4>
+                        <button class='collapser'><img src='images/arrow-small.png' alt='Click to collapse'></button> Scene Object Tree
+                    </h4>
 
-                        <menu type='list' class='inner-section collapsible'>
-                            <ol class='scrollable scene-tree'>
-                                <li class='scene-obj obj-1' data-id='obj-1-id' data-parent='parent-id?'>
-                                    <div class='selectable'>
-                                        <button class='collapser'><img src='images/arrow-small.png' alt='Click to collapse'></button> Some Object 1
-                                    </div>
+                    <menu type='list' class='inner-section collapsible'>
+                        <ol class='scrollable scene-tree'>
+                            <li class='scene-obj obj-1' data-id='obj-1-id' data-parent='parent-id?'>
+                                <div class='selectable'>
+                                    <button class='collapser'><img src='images/arrow-small.png' alt='Click to collapse'></button> Some Object 1
+                                </div>
 
-                                    <ol class='collapsible'>
-                                        <li class='scene-obj child obj-1a' data-id='obj-1a-id' data-parent='parent-id?'>
-                                            <div class='selectable selected-obj'>
-                                                <button class='collapser'><img src='images/arrow-small.png' alt='Click to collapse'></button> Child 1
-                                            </div>
+                                <ol class='collapsible'>
+                                    <li class='scene-obj child obj-1a' data-id='obj-1a-id' data-parent='parent-id?'>
+                                        <div class='selectable selected-obj'>
+                                            <button class='collapser'><img src='images/arrow-small.png' alt='Click to collapse'></button> Child 1
+                                        </div>
 
-                                            <ol class='collapsible'>
-                                                <li class='scene-obj child obj-1a1' data-id='obj-1a1-id' data-parent='parent-id?'>
-                                                    <div class='selectable'>
-                                                        <button class='collapser invisible'><img src='images/arrow-small.png' alt='Click to collapse'></button>Grandchild 1
-                                                    </div>
-                                                </li>
-                                                <li class='scene-obj child obj-1a2' data-id='obj-1a2-id' data-parent='parent-id?'>
-                                                    <div class='selectable'>
-                                                        <button class='collapser invisible'><img src='images/arrow-small.png' alt='Click to collapse'></button>Grandchild 2
-                                                    </div>
-                                                </li>
-                                            </ol>
+                                        <ol class='collapsible'>
+                                            <li class='scene-obj child obj-1a1' data-id='obj-1a1-id' data-parent='parent-id?'>
+                                                <div class='selectable'>
+                                                    <button class='collapser invisible'><img src='images/arrow-small.png' alt='Click to collapse'></button>Grandchild 1
+                                                </div>
+                                            </li>
+                                            <li class='scene-obj child obj-1a2' data-id='obj-1a2-id' data-parent='parent-id?'>
+                                                <div class='selectable'>
+                                                    <button class='collapser invisible'><img src='images/arrow-small.png' alt='Click to collapse'></button>Grandchild 2
+                                                </div>
+                                            </li>
+                                        </ol>
 
-                                        </li>
-
-                                        <li class='scene-obj child obj-1b' data-id='obj-1b-id' data-parent='parent-id?'>
-                                            <div class='selectable'>
-                                                <button class='collapser'><img src='images/arrow-small.png' alt='Click to collapse'></button> Child 2
-                                            </div>
-
-                                            <ol class='collapsible'>
-                                                <li class='scene-obj child obj-1b1' data-id='obj-1b1-id' data-parent='parent-id?'>
-                                                    <div class='selectable'>
-                                                        <button class='collapser invisible'><img src='images/arrow-small.png' alt='Click to collapse'></button>Grandchild 1
-                                                    </div>
-                                                </li>
-                                                <li class='scene-obj child obj-1b2' data-id='obj-1b2-id' data-parent='parent-id?'>
-                                                    <div class='selectable'>
-                                                        <button class='collapser invisible'><img src='images/arrow-small.png' alt='Click to collapse'></button>Grandchild 2
-                                                    </div>
-                                                </li>
-                                                <li class='scene-obj child obj-1b3' data-id='obj-1b3-id' data-parent='parent-id?'>
-                                                    <div class='selectable'>
-                                                        <button class='collapser invisible'><img src='images/arrow-small.png' alt='Click to collapse'></button>Grandchild 3
-                                                    </div>
-                                                </li>
-                                            </ol>
-
-                                        </li>
-
-                                    </ol>
-
-                                </li>
-                                <li class='scene-obj obj-2' data-id='obj-2-id' data-parent='parent-id?'>
-                                    <div class='selectable'>
-                                        <button class='collapser invisible'><img src='images/arrow-small.png' alt='Click to collapse'></button>Some Object 2
-                                    </div>
-                                </li>
-                            </ol> <!-- end .scene-tree -->
-
-                            <a class='tiny-text jump-to-top' href='#sidebar-header'>Jump to top</a>
-
-                        </menu> <!-- end .inner-section -->
-                        <!-- Add a search field for searching the objects (lazy search) -->
-
-                    </div> <!-- end .sidebar-section -->
-
-                    <div class='sidebar-section component obj-info'>
-                        <h4>
-                            <button class='collapser'><img src='images/arrow-small.png' alt='Click to collapse'></button> Object Info
-                        </h4>
-
-                        <form class='inner-section collapsible'>
-                            <ol>
-                                <li class='child info-field'>
-                                    <label for='name'>name:</label>
-                                    <input class='name' name='name' type='text'>
-                                </li>
-                                <li class='child info-field'>
-                                    <label for='id'>id:</label>
-                                    <input class='id' name='id' type='text'>
-                                </li>
-                                <li class='child info-field'>
-                                    <label for='foo'>foo:</label>
-                                    <input class='foo' name='foo' type='text'>
-                                </li>
-                            </ol>
-
-                            <a class='tiny-text jump-to-top' href='#sidebar-header'>Jump to top</a>
-
-                        </form>
-
-                    </div> <!-- end .obj-info -->
-
-                    <div class='sidebar-section component comp-trans'>
-                        <h4><button class='collapser'><img src='images/arrow-small.png' alt='Click to collapse'></button> Transforms</h4>
-
-                        <form class='inner-section collapsible'>
-                            <fieldset class='position'>
-                                <legend><button>position</button></legend>
-                                <ol>
-                                    <li class='child transform-field'>
-                                        <label for='x-coord'>x:</label>
-                                        <input class='x-coord number' name='x-coord' type='number'>
                                     </li>
-                                    <li class='child transform-field'>
-                                        <label for='y-coord'>y:</label>
-                                        <input class='y-coord number' name='y-coord' type='number'>
+
+                                    <li class='scene-obj child obj-1b' data-id='obj-1b-id' data-parent='parent-id?'>
+                                        <div class='selectable'>
+                                            <button class='collapser'><img src='images/arrow-small.png' alt='Click to collapse'></button> Child 2
+                                        </div>
+
+                                        <ol class='collapsible'>
+                                            <li class='scene-obj child obj-1b1' data-id='obj-1b1-id' data-parent='parent-id?'>
+                                                <div class='selectable'>
+                                                    <button class='collapser invisible'><img src='images/arrow-small.png' alt='Click to collapse'></button>Grandchild 1
+                                                </div>
+                                            </li>
+                                            <li class='scene-obj child obj-1b2' data-id='obj-1b2-id' data-parent='parent-id?'>
+                                                <div class='selectable'>
+                                                    <button class='collapser invisible'><img src='images/arrow-small.png' alt='Click to collapse'></button>Grandchild 2
+                                                </div>
+                                            </li>
+                                            <li class='scene-obj child obj-1b3' data-id='obj-1b3-id' data-parent='parent-id?'>
+                                                <div class='selectable'>
+                                                    <button class='collapser invisible'><img src='images/arrow-small.png' alt='Click to collapse'></button>Grandchild 3
+                                                </div>
+                                            </li>
+                                        </ol>
+
                                     </li>
-                                    <li class='child transform-field'>
-                                        <label for='z-coord'>z:</label>
-                                        <input class='z-coord number' name='z-coord' type='number'>
-                                    </li>
+
                                 </ol>
-                            </fieldset>
 
-                            <fieldset class='rotation'>
-                                <legend><button>rotation</button></legend>
-                                <ol>
-                                    <li class='child transform-field'>
-                                        <label for='x-rot'>x:</label>
-                                        <input class='x-rot number' name='x-rot' type='number'>
-                                    </li>
-                                    <li class='child transform-field'>
-                                        <label for='y-rot'>y:</label>
-                                        <input class='y-rot number' name='y-rot' type='number'>
-                                    </li>
-                                    <li class='child transform-field'>
-                                        <label for='z-rot'>z:</label>
-                                        <input class='z-rot number' name='z-rot' type='number'>
-                                    </li>
-                                </ol>
-                            </fieldset>
+                            </li>
+                            <li class='scene-obj obj-2' data-id='obj-2-id' data-parent='parent-id?'>
+                                <div class='selectable'>
+                                    <button class='collapser invisible'><img src='images/arrow-small.png' alt='Click to collapse'></button>Some Object 2
+                                </div>
+                            </li>
+                        </ol> <!-- end .scene-tree -->
 
-                            <fieldset class='position'>
-                                <legend><button>scale</button></legend>
-                                <ol>
-                                    <li class='child transform-field'>
-                                        <label for='x-scale'>x:</label>
-                                        <input class='x-scale number' name='x-scale' type='number'>
-                                    </li>
-                                    <li class='child transform-field'>
-                                        <label for='y-scale'>y:</label>
-                                        <input class='y-scale number' name='y-scale' type='number'>
-                                    </li>
-                                    <li class='child transform-field'>
-                                        <label for='z-scale'>z:</label>
-                                        <input class='z-scale number' name='z-scale' type='number'>
-                                    </li>
-                                </ol>
-                            </fieldset>
+                        <a class='tiny-text jump-to-top' href='#sidebar-header'>Jump to top</a>
 
-                            <a class='tiny-text jump-to-top' href='#sidebar-header'>Jump to top</a>
+                    </menu> <!-- end .inner-section -->
+                    <!-- Add a search field for searching the objects (lazy search) -->
 
-                        </form>
+                </div> <!-- end .sidebar-section -->
 
-                    </div> <!-- end .transforms -->
+                <div class='sidebar-section component obj-info'>
+                    <h4>
+                        <button class='collapser'><img src='images/arrow-small.png' alt='Click to collapse'></button> Object Info
+                    </h4>
 
-                    <div class='sidebar-section component comp-script comp-id'>
-                        <h4>
-                            <button class='collapser'><img src='images/arrow-small.png' alt='Click to collapse'></button>
-                            <input class='active-comp-checkbox' name='active-material' type='checkbox' checked='checked'>
-                            Script1
-                        </h4>
+                    <form class='inner-section collapsible'>
+                        <ol>
+                            <li class='child info-field'>
+                                <label for='name'>name:</label>
+                                <input class='name' name='name' type='text'>
+                            </li>
+                            <li class='child info-field'>
+                                <label for='id'>id:</label>
+                                <input class='id' name='id' type='text'>
+                            </li>
+                            <li class='child info-field'>
+                                <label for='foo'>foo:</label>
+                                <input class='foo' name='foo' type='text'>
+                            </li>
+                        </ol>
 
-                        <form class='inner-section collapsible'>
-                            <!-- Possibly these could have a checkbox to activate them,
-                            a play button for functions to run the functions, var names
-                            as fields so they can be changed in the inspector -->
+                        <a class='tiny-text jump-to-top' href='#sidebar-header'>Jump to top</a>
+
+                    </form>
+
+                </div> <!-- end .obj-info -->
+
+                <div class='sidebar-section component comp-trans'>
+                    <h4><button class='collapser'><img src='images/arrow-small.png' alt='Click to collapse'></button> Transforms</h4>
+
+                    <form class='inner-section collapsible'>
+                        <fieldset class='position'>
+                            <legend><button>position</button></legend>
                             <ol>
-                                <li class='child'>
-                                    <label for='aNum'>aNum:</label>
-                                    <input class='aNum number' name='aNum' type='number' placerholder='How to validate?'>
+                                <li class='child transform-field'>
+                                    <label for='x-coord'>x:</label>
+                                    <input class='x-coord number' name='x-coord' type='number'>
                                 </li>
-                                <li class='child'>
-                                    <label for='someText'>someText:</label>
-                                    <input class='someText number' name='someText' type='text'>
+                                <li class='child transform-field'>
+                                    <label for='y-coord'>y:</label>
+                                    <input class='y-coord number' name='y-coord' type='number'>
                                 </li>
-                                <li class='child'>
-                                    <!-- for a bool -->
-                                    <input name="aBool" type="checkbox">
-                                    <label for='aBool'>aBool</label>
+                                <li class='child transform-field'>
+                                    <label for='z-coord'>z:</label>
+                                    <input class='z-coord number' name='z-coord' type='number'>
                                 </li>
                             </ol>
+                        </fieldset>
 
-                            <a class='tiny-text jump-to-top' href='#sidebar-header'>Jump to top</a>
-
-                        </form>
-
-                    </div> <!-- end .comp-id -->
-
-                    <div class='sidebar-section component comp-script comp-id'>
-                        <h4>
-                            <button class='collapser'><img src='images/arrow-small.png' alt='Click to collapse'></button>
-                            <input class='active-comp-checkbox' name='active-material' type='checkbox' checked='checked'>
-                            Script2
-                        </h4>
-
-                        <form class='inner-section collapsible'>
+                        <fieldset class='rotation'>
+                            <legend><button>rotation</button></legend>
                             <ol>
-                                <li class='child'>
-                                    <!-- Perhaps if text exceeds width of textbox, focus
-                                    on the input will pop out a wider input field -->
-                                    <label for='aNum'>var <input class='var-name' name='aNum' type='text' value="aNum">:</label>
-                                    <input class='aNum number' name='aNum' type='number'>
+                                <li class='child transform-field'>
+                                    <label for='x-rot'>x:</label>
+                                    <input class='x-rot number' name='x-rot' type='number'>
                                 </li>
-                                <li class='child'>
-                                    <label for='someText'>var <input class='var-name' name='someText-name' type='text' value='someText'>:</label>
-                                    <input class='someText number' name='someText' type='text'>
+                                <li class='child transform-field'>
+                                    <label for='y-rot'>y:</label>
+                                    <input class='y-rot number' name='y-rot' type='number'>
                                 </li>
-                                <li class='child'>
-                                    <input name="aBool" type="checkbox">
-                                    <label for='aBool'>var <input class='var-name' name='aBool' type='text' value="aBool"></label>
-                                </li>
-                                <li class='child'>
-                                    <label for='aColor'>var <input class='var-name' name='aColor' type='text' value="aColor"></label>
-                                    <input name="aColor" type="color">
-                                </li>
-                                <li class='child'>
-                                    <input name="aBoolToo" type="checkbox">
-                                    <label for='aBoolToo'>var <input class='var-name' name='aBoolToo' type='text' value="aBoolToo"></label>
+                                <li class='child transform-field'>
+                                    <label for='z-rot'>z:</label>
+                                    <input class='z-rot number' name='z-rot' type='number'>
                                 </li>
                             </ol>
+                        </fieldset>
 
-                            <a class='tiny-text jump-to-top' href='#sidebar-header'>Jump to top</a>
-                        </form>
-
-                    </div> <!-- end .comp-id -->
-
-                    <div class='sidebar-section component comp-mat comp-id'>
-                        <h4>
-                            <button class='collapser'><img src='images/arrow-small.png' alt='Click to collapse'></button>
-                            <input class='active-comp-checkbox' name='active-material' type='checkbox' checked='checked'>
-                            Material
-                        </h4>
-
-                        <form class='inner-section collapsible'>
+                        <fieldset class='position'>
+                            <legend><button>scale</button></legend>
                             <ol>
-                                <li class='child'>
-                                    <label for='aColor'>var <input class='var-name' name='aColor' type='text' value="aColor"></label>
-                                    <input name="aColor" type="color">
+                                <li class='child transform-field'>
+                                    <label for='x-scale'>x:</label>
+                                    <input class='x-scale number' name='x-scale' type='number'>
+                                </li>
+                                <li class='child transform-field'>
+                                    <label for='y-scale'>y:</label>
+                                    <input class='y-scale number' name='y-scale' type='number'>
+                                </li>
+                                <li class='child transform-field'>
+                                    <label for='z-scale'>z:</label>
+                                    <input class='z-scale number' name='z-scale' type='number'>
                                 </li>
                             </ol>
+                        </fieldset>
 
-                            <a class='tiny-text jump-to-top' href='#sidebar-header'>Jump to top</a>
-                        </form>
+                        <a class='tiny-text jump-to-top' href='#sidebar-header'>Jump to top</a>
 
-                    </div> <!-- end .comp-id -->
+                    </form>
 
-                    <div class='sidebar-section component comp-physics comp-id'>
-                        <h4><button class='collapser'><img src='images/arrow-small.png' alt='Click to collapse'></button>
-                            <input class='active-comp-checkbox' name='active-Collider' type='checkbox' checked='checked'>
-                            Collider
-                        </h4>
+                </div> <!-- end .transforms -->
 
-                        <form class='inner-section collapsible'>
-                            <ol>
-                                <li class='child'>
-                                    Test
-                                </li>
-                            </ol>
+                <div class='sidebar-section component comp-script comp-id'>
+                    <h4>
+                        <button class='collapser'><img src='images/arrow-small.png' alt='Click to collapse'></button>
+                        <input class='active-comp-checkbox' name='active-material' type='checkbox' checked='checked'>
+                        Script1
+                    </h4>
 
-                            <a class='tiny-text jump-to-top' href='#sidebar-header'>Jump to top</a>
-                        </form>
+                    <form class='inner-section collapsible'>
+                        <!-- Possibly these could have a checkbox to activate them,
+                        a play button for functions to run the functions, var names
+                        as fields so they can be changed in the inspector -->
+                        <ol>
+                            <li class='child'>
+                                <label for='aNum'>aNum:</label>
+                                <input class='aNum number' name='aNum' type='number' placerholder='How to validate?'>
+                            </li>
+                            <li class='child'>
+                                <label for='someText'>someText:</label>
+                                <input class='someText number' name='someText' type='text'>
+                            </li>
+                            <li class='child'>
+                                <!-- for a bool -->
+                                <input name="aBool" type="checkbox">
+                                <label for='aBool'>aBool</label>
+                            </li>
+                        </ol>
 
-                    </div> <!-- end .comp-id -->
+                        <a class='tiny-text jump-to-top' href='#sidebar-header'>Jump to top</a>
 
-                </div> <!-- end #inspector-contents -->
+                    </form>
 
-                <div id='assets-contents' class='hidden'>
-                    Test text
-                </div> <!-- end #assets-contents -->
+                </div> <!-- end .comp-id -->
 
-            </div> <!-- end .sidebar-body -->
+                <div class='sidebar-section component comp-script comp-id'>
+                    <h4>
+                        <button class='collapser'><img src='images/arrow-small.png' alt='Click to collapse'></button>
+                        <input class='active-comp-checkbox' name='active-material' type='checkbox' checked='checked'>
+                        Script2
+                    </h4>
+
+                    <form class='inner-section collapsible'>
+                        <ol>
+                            <li class='child'>
+                                <!-- Perhaps if text exceeds width of textbox, focus
+                                on the input will pop out a wider input field -->
+                                <label for='aNum'>var <input class='var-name' name='aNum' type='text' value="aNum">:</label>
+                                <input class='aNum number' name='aNum' type='number'>
+                            </li>
+                            <li class='child'>
+                                <label for='someText'>var <input class='var-name' name='someText-name' type='text' value='someText'>:</label>
+                                <input class='someText number' name='someText' type='text'>
+                            </li>
+                            <li class='child'>
+                                <input name="aBool" type="checkbox">
+                                <label for='aBool'>var <input class='var-name' name='aBool' type='text' value="aBool"></label>
+                            </li>
+                            <li class='child'>
+                                <label for='aColor'>var <input class='var-name' name='aColor' type='text' value="aColor"></label>
+                                <input name="aColor" type="color">
+                            </li>
+                            <li class='child'>
+                                <input name="aBoolToo" type="checkbox">
+                                <label for='aBoolToo'>var <input class='var-name' name='aBoolToo' type='text' value="aBoolToo"></label>
+                            </li>
+                        </ol>
+
+                        <a class='tiny-text jump-to-top' href='#sidebar-header'>Jump to top</a>
+                    </form>
+
+                </div> <!-- end .comp-id -->
+
+                <div class='sidebar-section component comp-mat comp-id'>
+                    <h4>
+                        <button class='collapser'><img src='images/arrow-small.png' alt='Click to collapse'></button>
+                        <input class='active-comp-checkbox' name='active-material' type='checkbox' checked='checked'>
+                        Material
+                    </h4>
+
+                    <form class='inner-section collapsible'>
+                        <ol>
+                            <li class='child'>
+                                <label for='aColor'>var <input class='var-name' name='aColor' type='text' value="aColor"></label>
+                                <input name="aColor" type="color">
+                            </li>
+                        </ol>
+
+                        <a class='tiny-text jump-to-top' href='#sidebar-header'>Jump to top</a>
+                    </form>
+
+                </div> <!-- end .comp-id -->
+
+                <div class='sidebar-section component comp-physics comp-id'>
+                    <h4><button class='collapser'><img src='images/arrow-small.png' alt='Click to collapse'></button>
+                        <input class='active-comp-checkbox' name='active-Collider' type='checkbox' checked='checked'>
+                        Collider
+                    </h4>
+
+                    <form class='inner-section collapsible'>
+                        <ol>
+                            <li class='child'>
+                                Test
+                            </li>
+                        </ol>
+
+                        <a class='tiny-text jump-to-top' href='#sidebar-header'>Jump to top</a>
+                    </form>
+
+                </div> <!-- end .comp-id -->
+
+            </div> <!-- end #inspector-contents -->
+
+            <div id='assets-contents' class='hidden'>
+                Test text
+            </div> <!-- end #assets-contents -->
 
         </div> <!-- end .sidebar -->
 
