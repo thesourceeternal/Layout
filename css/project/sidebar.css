@@ -142,17 +142,17 @@ input[type=color] {
 
 /* --- Basic elements --- */
 
-h1, h2, h3, h4, h5, h6 {
+.sidebar h1, .sidebar h2, .sidebar h3, .sidebar h4,.sidebar h5, .sidebar h6 {
 	color: rgb(230, 230, 230);
 }
 
-h1 {font-size: 1.5rem;}
+/*h1 {font-size: 1.5rem;}
 
 h2 {font-size: 1.3rem;}
 
 h3 {font-size: 1.1rem;}
 
-h4 {}
+h4 {}*/
 
 input {
 	background: none;
@@ -186,7 +186,7 @@ input {
 .selected-obj {background-color: rgb(95, 95, 95);}
 
 /* --- Section colors --- */
-.scene-tree-container h4 { /* white on black */
+.scene-tree-container h1 { /* white on black */
 	background-color: rgba(0, 0, 0, .4);
 }
 
@@ -195,23 +195,23 @@ input {
 	border: 1px solid rgba(40, 40, 40, .6);
 }
 
-.obj-info h4 {
+.obj-info h1 {
 	color: rgba(218, 84, 84, 0.82); /* red */
 }
 
-.comp-trans h4 {
+.comp-trans h1 {
 	color: rgba(106, 168, 79, 1); /* green */
 }
 
-.comp-physics h4 {
+.comp-physics h1 {
 	color: rgba(230, 145, 56, 1); /* orange */
 }
 
-.comp-script h4 {
+.comp-script h1 {
 	color: rgba(159, 197, 232, 1); /* blue */
 }
 
-.comp-mat h4 {
+.comp-mat h1 {
 	color: rgba(255, 229, 153, 1); /* yellow */
 }
 

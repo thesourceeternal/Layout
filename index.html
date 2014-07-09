@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Layout</title>
-        <meta name="layout" content="Interface layout brainstorming">
+        <meta name="application-name" content="html5 layout">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="css/resets/normalize.min.css">
@@ -29,16 +29,16 @@
                 but this will do for now.
                 I also don't want the page to jump down anywhere, perhaps this is the wrong
                 way to do this. -->
-                <h3 class='tab left-tab inspector-tab active-tab'><a href='#inspector-contents'>Inspector</a></h3>
-                <h3 class='tab right-tab assets-tab'><a href='#assets-contents'>Assets</a></h3>
+                <a class='tab left-tab inspector-tab active-tab' href='#inspector-contents'>Inspector</a>
+                <a class='tab right-tab assets-tab' href='#assets-contents'>Assets</a>
             </nav>
 
             <div id='inspector-contents'>
 
                 <section class='scene-tree-container'>
-                    <h4>
+                    <h1>
                         <button class='collapser'><img src='images/arrow-small.png' alt='Click to collapse'></button> Scene Object Tree
-                    </h4>
+                    </h1>
 
                     <menu type='list' class='inner-section collapsible'> <!-- draggable height change -->
                         <ul class='scrollable scene-tree'>
@@ -111,9 +111,9 @@
                 </section> <!-- end .scene-tree-container -->
 
                 <section class='component obj-info'>
-                    <h4>
+                    <h1>
                         <button class='collapser'><img src='images/arrow-small.png' alt='Click to collapse'></button> Object Info
-                    </h4>
+                    </h1>
 
                     <form class='inner-section collapsible'>
                         <ul>
@@ -138,7 +138,7 @@
                 </section> <!-- end .obj-info -->
 
                 <section class='component comp-trans'>
-                    <h4><button class='collapser'><img src='images/arrow-small.png' alt='Click to collapse'></button> Transforms</h4>
+                    <h1><button class='collapser'><img src='images/arrow-small.png' alt='Click to collapse'></button> Transforms</h1>
 
                     <form class='inner-section collapsible'>
                         <fieldset class='position'>
@@ -202,11 +202,11 @@
                 </section> <!-- end .transforms -->
 
                 <section class='component comp-script comp-id'>
-                    <h4>
+                    <h1>
                         <button class='collapser'><img src='images/arrow-small.png' alt='Click to collapse'></button>
                         <input class='active-comp-checkbox' name='active-material' type='checkbox' checked='checked'>
                         Script1
-                    </h4>
+                    </h1>
 
                     <form class='inner-section collapsible'>
                         <!-- Possibly these could have a checkbox to activate them,
@@ -235,11 +235,11 @@
                 </section> <!-- end .comp-id -->
 
                 <section class='component comp-script comp-id'>
-                    <h4>
+                    <h1>
                         <button class='collapser'><img src='images/arrow-small.png' alt='Click to collapse'></button>
                         <input class='active-comp-checkbox' name='active-material' type='checkbox' checked='checked'>
                         Script2
-                    </h4>
+                    </h1>
 
                     <form class='inner-section collapsible'>
                         <ul>
@@ -273,11 +273,11 @@
                 </section> <!-- end .comp-id -->
 
                 <section class='component comp-mat comp-id'>
-                    <h4>
+                    <h1>
                         <button class='collapser'><img src='images/arrow-small.png' alt='Click to collapse'></button>
                         <input class='active-comp-checkbox' name='active-material' type='checkbox' checked='checked'>
                         Material
-                    </h4>
+                    </h1>
 
                     <form class='inner-section collapsible'>
                         <ul>
@@ -293,10 +293,10 @@
                 </section> <!-- end .comp-id -->
 
                 <section class='component comp-physics comp-id'>
-                    <h4><button class='collapser'><img src='images/arrow-small.png' alt='Click to collapse'></button>
+                    <h1><button class='collapser'><img src='images/arrow-small.png' alt='Click to collapse'></button>
                         <input class='active-comp-checkbox' name='active-Collider' type='checkbox' checked='checked'>
                         Collider
-                    </h4>
+                    </h1>
 
                     <form class='inner-section collapsible'>
                         <ul>
