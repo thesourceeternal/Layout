@@ -127,9 +127,13 @@ input[type=color] {
 	margin-bottom: 10px; /* space between tabs and section line */
 }
 
-.collapsible {-webkit-transition: height .3s linear}
+/* CSS transition attempts leftovers, didn't work, want to try again */
+/*.collapsible {-webkit-transition: height .3s linear}*/
 
-.collapsed {height: 0;}
+.collapsed {
+	display: hidden;
+	/*height: 0;*/
+}
 
 
 /* ==========================================================================
