@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -25,14 +22,11 @@
         <!-- More scripts after body -->
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
 
 <!-- Should I be using the class 'mod' in here? -->
         <div class='sidebar'>
 
-            <div class='nav-header' id='sidebar-header'>
+            <div class='nav-header' id='sidebar-header'> <!-- is this div needed? -->
                 <div class='spacer editors-tab-spacer'></div>
                 <div class='faux-elem'><h3>Inspector</h3></div>
                 <nav class='editors-tabs editor-menu'>
@@ -43,6 +37,7 @@
                 </nav>
             </div>
 
+
             <div class='sidebar-body'>
                 <div id='inspector-contents'>
 
@@ -52,7 +47,6 @@
                         </h4>
 
                         <menu type='list' class='inner-section collapsible'>
-
                             <ol class='scrollable scene-tree'>
                                 <li class='scene-obj obj-1' data-id='obj-1-id' data-parent='parent-id?'>
                                     <div class='selectable'>
@@ -113,11 +107,11 @@
                                         <button class='collapser invisible'><img src='images/arrow-small.png' alt='Click to collapse'></button>Some Object 2
                                     </div>
                                 </li>
-                            </ol>
+                            </ol> <!-- end .scene-tree -->
 
                             <a class='tiny-text jump-to-top' href='#sidebar-header'>Jump to top</a>
 
-                        </menu> <!-- end .scene-tree -->
+                        </menu> <!-- end .inner-section -->
                         <!-- Add a search field for searching the objects (lazy search) -->
 
                     </div> <!-- end .sidebar-section -->
