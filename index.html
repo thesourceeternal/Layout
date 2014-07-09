@@ -41,19 +41,19 @@
                     </h4>
 
                     <menu type='list' class='inner-section collapsible'> <!-- draggable height change -->
-                        <ol class='scrollable scene-tree'>
+                        <ul class='scrollable scene-tree'>
                             <li class='scene-obj obj-1' data-id='obj-1-id' data-parent='parent-id?'>
                                 <div class='selectable'>
                                     <button class='collapser'><img src='images/arrow-small.png' alt='Click to collapse'></button> Some Object 1
                                 </div>
 
-                                <ol class='collapsible'>
+                                <ul class='collapsible'>
                                     <li class='scene-obj child obj-1a' data-id='obj-1a-id' data-parent='parent-id?'>
                                         <div class='selectable selected-obj'>
                                             <button class='collapser'><img src='images/arrow-small.png' alt='Click to collapse'></button> Child 1
                                         </div>
 
-                                        <ol class='collapsible'>
+                                        <ul class='collapsible'>
                                             <li class='scene-obj child obj-1a1' data-id='obj-1a1-id' data-parent='parent-id?'>
                                                 <div class='selectable'>
                                                     <button class='collapser invisible'><img src='images/arrow-small.png' alt='Click to collapse'></button>Grandchild 1
@@ -64,7 +64,7 @@
                                                     <button class='collapser invisible'><img src='images/arrow-small.png' alt='Click to collapse'></button>Grandchild 2
                                                 </div>
                                             </li>
-                                        </ol>
+                                        </ul>
 
                                     </li>
 
@@ -73,7 +73,7 @@
                                             <button class='collapser'><img src='images/arrow-small.png' alt='Click to collapse'></button> Child 2
                                         </div>
 
-                                        <ol class='collapsible'>
+                                        <ul class='collapsible'>
                                             <li class='scene-obj child obj-1b1' data-id='obj-1b1-id' data-parent='parent-id?'>
                                                 <div class='selectable'>
                                                     <button class='collapser invisible'><img src='images/arrow-small.png' alt='Click to collapse'></button>Grandchild 1
@@ -89,11 +89,11 @@
                                                     <button class='collapser invisible'><img src='images/arrow-small.png' alt='Click to collapse'></button>Grandchild 3
                                                 </div>
                                             </li>
-                                        </ol>
+                                        </ul>
 
                                     </li>
 
-                                </ol>
+                                </ul>
 
                             </li>
                             <li class='scene-obj obj-2' data-id='obj-2-id' data-parent='parent-id?'>
@@ -101,7 +101,7 @@
                                     <button class='collapser invisible'><img src='images/arrow-small.png' alt='Click to collapse'></button>Some Object 2
                                 </div>
                             </li>
-                        </ol> <!-- end .scene-tree -->
+                        </ul> <!-- end .scene-tree -->
 
                         <a class='tiny-text jump-to-top' href='#sidebar-header'>Jump to top</a>
 
@@ -116,7 +116,7 @@
                     </h4>
 
                     <form class='inner-section collapsible'>
-                        <ol>
+                        <ul>
                             <li class='child info-field'>
                                 <label for='name'>name:</label>
                                 <input class='name' name='name' type='text'>
@@ -129,7 +129,7 @@
                                 <label for='foo'>foo:</label>
                                 <input class='foo' name='foo' type='text'>
                             </li>
-                        </ol>
+                        </ul>
 
                         <a class='tiny-text jump-to-top' href='#sidebar-header'>Jump to top</a>
 
@@ -143,7 +143,7 @@
                     <form class='inner-section collapsible'>
                         <fieldset class='position'>
                             <legend><button>position</button></legend>
-                            <ol>
+                            <ul>
                                 <li class='child transform-field'>
                                     <label for='x-coord'>x:</label>
                                     <input class='x-coord number' name='x-coord' type='number'>
@@ -156,12 +156,12 @@
                                     <label for='z-coord'>z:</label>
                                     <input class='z-coord number' name='z-coord' type='number'>
                                 </li>
-                            </ol>
+                            </ul>
                         </fieldset>
 
                         <fieldset class='rotation'>
                             <legend><button>rotation</button></legend>
-                            <ol>
+                            <ul>
                                 <li class='child transform-field'>
                                     <label for='x-rot'>x:</label>
                                     <input class='x-rot number' name='x-rot' type='number'>
@@ -174,12 +174,12 @@
                                     <label for='z-rot'>z:</label>
                                     <input class='z-rot number' name='z-rot' type='number'>
                                 </li>
-                            </ol>
+                            </ul>
                         </fieldset>
 
                         <fieldset class='position'>
                             <legend><button>scale</button></legend>
-                            <ol>
+                            <ul>
                                 <li class='child transform-field'>
                                     <label for='x-scale'>x:</label>
                                     <input class='x-scale number' name='x-scale' type='number'>
@@ -192,7 +192,7 @@
                                     <label for='z-scale'>z:</label>
                                     <input class='z-scale number' name='z-scale' type='number'>
                                 </li>
-                            </ol>
+                            </ul>
                         </fieldset>
 
                         <a class='tiny-text jump-to-top' href='#sidebar-header'>Jump to top</a>
@@ -212,7 +212,7 @@
                         <!-- Possibly these could have a checkbox to activate them,
                         a play button for functions to run the functions, var names
                         as fields so they can be changed in the inspector -->
-                        <ol>
+                        <ul>
                             <li class='child'>
                                 <label for='aNum'>aNum:</label>
                                 <input class='aNum number' name='aNum' type='number' placerholder='How to validate?'>
@@ -226,7 +226,7 @@
                                 <input name="aBool" type="checkbox">
                                 <label for='aBool'>aBool</label>
                             </li>
-                        </ol>
+                        </ul>
 
                         <a class='tiny-text jump-to-top' href='#sidebar-header'>Jump to top</a>
 
@@ -242,7 +242,7 @@
                     </h4>
 
                     <form class='inner-section collapsible'>
-                        <ol>
+                        <ul>
                             <li class='child'>
                                 <!-- Perhaps if text exceeds width of textbox, focus
                                 on the input will pop out a wider input field -->
@@ -265,7 +265,7 @@
                                 <input name="aBoolToo" type="checkbox">
                                 <label for='aBoolToo'>var <input class='var-name' name='aBoolToo' type='text' value="aBoolToo"></label>
                             </li>
-                        </ol>
+                        </ul>
 
                         <a class='tiny-text jump-to-top' href='#sidebar-header'>Jump to top</a>
                     </form>
@@ -280,12 +280,12 @@
                     </h4>
 
                     <form class='inner-section collapsible'>
-                        <ol>
+                        <ul>
                             <li class='child'>
                                 <label for='aColor'>var <input class='var-name' name='aColor' type='text' value="aColor"></label>
                                 <input name="aColor" type="color">
                             </li>
-                        </ol>
+                        </ul>
 
                         <a class='tiny-text jump-to-top' href='#sidebar-header'>Jump to top</a>
                     </form>
@@ -299,11 +299,11 @@
                     </h4>
 
                     <form class='inner-section collapsible'>
-                        <ol>
+                        <ul>
                             <li class='child'>
                                 Test
                             </li>
-                        </ol>
+                        </ul>
 
                         <a class='tiny-text jump-to-top' href='#sidebar-header'>Jump to top</a>
                     </form>

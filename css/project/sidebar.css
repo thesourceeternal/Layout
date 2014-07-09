@@ -13,7 +13,7 @@ html, body {
 
 body{font-family:"Myriad Pro","Segoe UI",Helvetica, Arial, sans-serif;}
 
-ol, menu, nav, a, a:visited, a:link, input {
+ol, ul, menu, nav, a, a:visited, a:link, input {
 	padding: 0;
 	margin: 0;
 	color: inherit;
