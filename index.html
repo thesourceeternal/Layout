@@ -245,7 +245,7 @@
                                 </label>
                             </li>
                             <li class='child'>
-                                <label for='aBool'>
+                                <label>
                                     <input name="aBool" type="checkbox">
                                     aBool
                                 </label>
@@ -272,30 +272,25 @@
                             <li class='child'>
                                 <!-- Perhaps if text exceeds width of textbox, focus
                                 on the input will pop out a wider input field -->
-                                <label>
-                                    var <input class='var-name' name='aNum' type='text' value="aNum">:
-                                    <input class='aNum number' name='aNum' type='number'>
-                                </label>
+                                <!-- Can't have inputs or other labels in labels -->
+                                var <input class='var-name' name='aNum' type='text' value="aNum">:
+                                <input class='aNum number' name='aNum' type='number'>
                             </li>
                             <li class='child'>
-                                <label>
-                                    var <input class='var-name' name='someText-name' type='text' value='someText'>:
-                                    <input class='someText number' name='someText' type='text'>
-                                </label>
+                                var <input class='var-name' name='someText-name' type='text' value='someText'>:
+                                <input class='someText number' name='someText' type='text'>
                             </li>
                             <li class='child'>
-                                <label for='aBool'>
                                     <input name="aBool" type="checkbox">
                                     var <input class='var-name' name='aBool' type='text' value="aBool">
-                                </label>
                             </li>
                             <li class='child'>
-                                <label for='aColor'>var <input class='var-name' name='aColor' type='text' value="aColor"></label>
+                                var <input class='var-name' name='aColor' type='text' value="aColor">
                                 <input name="aColor" type="color">
                             </li>
                             <li class='child'>
                                 <input name="aBoolToo" type="checkbox">
-                                <label for='aBoolToo'>var <input class='var-name' name='aBoolToo' type='text' value="aBoolToo"></label>
+                                var <input class='var-name' name='aBoolToo' type='text' value="aBoolToo">
                             </li>
                         </ul>
 
