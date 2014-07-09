@@ -2,7 +2,6 @@
 
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Layout</title>
         <meta name="layout" content="Interface layout brainstorming">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,17 +22,16 @@
 <!-- Should I be using the class 'mod' in here? -->
         <div class='sidebar'>
 
-            <div class='nav-header' id='sidebar-header'> <!-- is this div needed? -->
-                <div class='spacer editors-tab-spacer'></div>
-                <div class='faux-elem'><h3>Inspector</h3></div>
-                <nav class='editors-tabs editor-menu'>
-                    <!-- Really I want to be able to click anywhere in the tab, not just the text,
-                    but this will do for now -->
-                    <li class='tab left-tab inspector-tab active-tab'><h3><a href='#inspector-contents'>Inspector</a></h3></li>
-                    <li class='tab right-tab assets-tab'><h3><a href='#assets-contents'>Assets</a></h3></li>
-                </nav>
-            </div>
-
+            <div class='spacer editors-tab-spacer'></div>
+            <div class='faux-elem'><h3>Inspector</h3></div>
+            <nav class='editors-tabs editor-menu'>
+                <!-- Really I want to be able to click anywhere in the tab, not just the text,
+                but this will do for now.
+                I also don't want the page to jump down anywhere, perhaps this is the wrong
+                way to do this. -->
+                <li class='tab left-tab inspector-tab active-tab'><h3><a href='#inspector-contents'>Inspector</a></h3></li>
+                <li class='tab right-tab assets-tab'><h3><a href='#assets-contents'>Assets</a></h3></li>
+            </nav>
 
             <div class='sidebar-body'>
                 <div id='inspector-contents'>
