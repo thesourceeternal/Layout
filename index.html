@@ -42,7 +42,9 @@
                         <button class='collapser'><img src='images/arrow-small.png' alt='Click to collapse'></button> Scene Object Tree
                     </h1>
                     <!-- Maybe this shouldn't be a menu -->
+                    <!-- Also, menu isn't supported by most browsers -->
                     <menu type='context' class='inner-section collapsible'> <!-- draggable height change -->
+                        <!-- Clicking on an object selects it in the scene -->
                         <ul class='scrollable scene-tree'>
                             <li class='scene-obj obj-1' data-id='obj-1-id'>
                                 <div class='selectable'>
@@ -233,7 +235,7 @@
                         <ul>
                             <li class='child'>
                                 <label>aNum:
-                                    <input class='aNum number' name='aNum' type='number' placerholder='How to validate?'>
+                                    <input class='aNum number' name='aNum' type='number' placeholder='How to validate?'>
                                 </label>
                             </li>
                             <li class='child'>
@@ -307,11 +309,9 @@
                     <form class='inner-section collapsible'>
                         <ul>
                             <li class='child'>
-                                <label for='aColor'>
-                                    var <input class='var-name' name='aColor' type='text' value="aColor">
-                                    <!-- !!! Not supported in IE at all -->
-                                    <input name="aColor" type="color">
-                                </label>
+                                var <input class='var-name' name='aColor' type='text' value="aColor">
+                                <!-- !!! Not supported in IE at all -->
+                                <input name="aColor" type="color">
                             </li>
                         </ul>
 
