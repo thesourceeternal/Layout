@@ -2,38 +2,71 @@
    Extra Resets
    ========================================================================== */
 
-* { /* Need to replace this of course */
+html, body {
+	height: 100%;
+}
+
+body{
+	font-family:"Myriad Pro","Segoe UI",Helvetica, Arial, sans-serif;
+	color: rgb(200, 200, 200);
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/* Everything */
+html, body, a, a:link, a:visited, button, div, fieldset, footer, form, header,
+h1, h2, h3, h4, h5, h6, hr, input, legend, li, menu,
+nav, ol, ul, section, select, textarea {
 	box-sizing: border-box;
 }
 
-html, body {
-	height: 100%;
-	color: rgb(200, 200, 200);
+/* No button */
+html, body, a, a:link, a:visited, div, fieldset, footer, form, header,
+h1, h2, h3, h4, h5, h6, hr, input, legend, li, menu,
+nav, ol, ul, section, select, textarea {
+	margin: 0;
+	padding: 0;
+	border: 0;
 }
 
-body{font-family:"Myriad Pro","Segoe UI",Helvetica, Arial, sans-serif;}
+/* No html or body */
+a, a:link, a:visited, button, div, fieldset, footer, form, header,
+h1, h2, h3, h4, h5, h6, hr, input, legend, li, menu,
+nav, ol, ul, section, select, textarea {
+	font-family: inherit;
+}
 
-ol, ul, menu, nav, a, a:visited, a:link, input, hr, section {
-	padding: 0;
-	margin: 0;
+/* No html, button, or body */
+a, a:link, a:visited, div, fieldset, footer, form, header,
+h1, h2, h3, h4, h5, h6, hr, input, legend, li, menu,
+nav, ol, ul, section, select, textarea {
 	color: inherit;
 }
-
-a {text-decoration: none;}
 
 h1, h2, h3, h4, h5, h6 {
 	font-size: 1rem;
 	font-weight: bold;
-	padding: 0;
-	margin: 0;
 }
+
+a {text-decoration: none;}
 
 li {list-style: none;}
 
-input {
-	border-spacing: 0;
-	margin: 0;
-	padding: 0;
+input {border-spacing: 0;}
+
+button, input, select, textarea {
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+fieldset {
+	border: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border-top: 1px solid #ccc;
 }
 
 
@@ -136,8 +169,12 @@ hr {
 /*.collapsible {-webkit-transition: height .3s linear}*/
 
 .collapsed {
-	display: hidden;
+	display: none;
 	/*height: 0;*/
+}
+
+.hidden {
+	display: none;
 }
 
 
@@ -164,6 +201,11 @@ input {
 	color: inherit;
 	border: 1px solid gray;
 }
+
+/*button {
+	color: rgb(40, 40, 40);
+	border: 1px solid rgb(40, 40, 40);;
+}*/
 
 /* --- Starting from the top --- */
 .sidebar {
@@ -239,4 +281,78 @@ input {
 /* --- Extra flourishes --- */
 .tiny-text {  /* Needs better name */
 	font-size: .7rem;
+}
+
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
 }
