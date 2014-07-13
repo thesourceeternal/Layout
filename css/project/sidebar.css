@@ -4,6 +4,8 @@
 
 html, body {
 	height: 100%;
+	width: 100%;
+	border: 0;
 }
 
 body{
@@ -26,7 +28,6 @@ h1, h2, h3, h4, h5, h6, hr, input, legend, li, menu,
 nav, ol, ul, section, textarea {
 	margin: 0;
 	padding: 0;
-	border: 0;
 }
 
 /* No html or body */
@@ -66,6 +67,7 @@ fieldset {
 hr {
     display: block;
     height: 1px;
+    border: 0;
     border-top: 1px solid #ccc;
 }
 
@@ -162,6 +164,10 @@ hr {
 
 .invisible {visibility: hidden;}
 
+.hidden {
+	display: none;
+}
+
 .faux-elem {
 	visibility: hidden;
 	margin-bottom: 10px; /* space between tabs and section line */
@@ -173,10 +179,6 @@ hr {
 .collapsed {
 	display: none;
 	/*height: 0;*/
-}
-
-.hidden {
-	display: none;
 }
 
 
