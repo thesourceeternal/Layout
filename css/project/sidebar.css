@@ -20,10 +20,10 @@ nav, ol, ul, section, select, textarea {
 	box-sizing: border-box;
 }
 
-/* No button */
+/* No button or select*/
 html, body, a, a:link, a:visited, div, fieldset, footer, form, header,
 h1, h2, h3, h4, h5, h6, hr, input, legend, li, menu,
-nav, ol, ul, section, select, textarea {
+nav, ol, ul, section, textarea {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -36,10 +36,10 @@ nav, ol, ul, section, select, textarea {
 	font-family: inherit;
 }
 
-/* No html, button, or body */
+/* No html, body, button, or select */
 a, a:link, a:visited, div, fieldset, footer, form, header,
 h1, h2, h3, h4, h5, h6, hr, input, legend, li, menu,
-nav, ol, ul, section, select, textarea {
+nav, ol, ul, section, textarea {
 	color: inherit;
 }
 
@@ -113,8 +113,11 @@ li, legend {margin-bottom: .1rem;}
 
 .transform-field {display: inline-block;}
 
-input[type=text] {
+input, select {
 	margin: 0 0 4px 4px;
+}
+
+input[type=text] {
 	padding-left: 4px;
 	width: 200px;
 }
@@ -124,7 +127,6 @@ input[type=text].var-name {
 }
 
 input[type=number] {
-	margin: 0 0 4px 4px;
 	padding-left: 4px;
 	width: 50px;
 }

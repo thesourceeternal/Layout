@@ -123,19 +123,27 @@
                     <form class='inner-section collapsible'>
                         <ul>
                             <li class='child info-field'>
-                                <label>name:
-                                    <input class='name' name='name' type='text'>
+                                <label>Prefab:
+                                    <select name='prefab'>
+                                        <option>None (make unique)</option>
+                                        <option>prefab 1</option>
+                                        <option>prefab 2</option>
+                                    </select>
                                 </label>
-                                
+                            </li>
+                            <li class='child info-field'>
+                                <label>name:
+                                    <input name='name' type='text'>
+                                </label>
                             </li>
                             <li class='child info-field'>
                                 <label>id:
-                                    <input class='id' name='id' type='text'>
+                                    <input name='id' type='text'>
                                 </label>
                             </li>
                             <li class='child info-field'>
                                 <label>foo:
-                                    <input class='foo' name='foo' type='text'>
+                                    <input name='foo' type='text'>
                                 </label>
                             </li>
                         </ul>
